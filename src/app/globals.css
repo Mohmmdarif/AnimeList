@@ -15,3 +15,18 @@ img {
 img:hover {
   transform: scale(102%);
 }
+
+.loading {
+  width: 8px;
+  height: 8px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 38px 0 0 14px, 76px 0 0 6px, 114px 0 0 0;
+  transform: translateX(-76px);
+  animation: d1 .5s infinite alternate linear;
+}
+
+@keyframes d1 {
+  50%  {box-shadow: 38px 0 0 6px, 76px 0 0 14px, 114px 0 0 6px}
+  100% {box-shadow: 38px 0 0 0  , 76px 0 0 6px, 114px 0 0 14px}
+}
